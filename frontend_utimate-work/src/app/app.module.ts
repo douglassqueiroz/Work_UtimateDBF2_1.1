@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { MatTableModule } from '@angular/material/table';
 import { AppRootingModule } from './app.routing.module';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -11,12 +12,14 @@ import { MatPaginatorModule } from '@angular/material/paginator';
  
   ],
   imports: [
-  
+    
     AppRootingModule,
     BrowserModule,
     MatTableModule,
     MatPaginatorModule,
-  
+    ReactiveFormsModule,
+    FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
